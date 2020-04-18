@@ -14,7 +14,7 @@ class BusController extends Controller
 
     protected function update() {
         $client = new \GuzzleHttp\Client();
-        $res = $client->request('GET', 'https://metrobustransit.ca/api/timetrack_03202019.asp')->getBody();
+        $res = $client->request('GET', 'https://www.metrobustransit.ca/api/timetrack_03202019.asp')->getBody();
         
         $busses = array();
         $count = substr_count($res, 'current_route');
