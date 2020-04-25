@@ -15,4 +15,5 @@ To install your own instance of this application, follw these steps:
 - clone the repository
 - run `composer install`
 - run `cp .env.example .env`
+- run `php artisan key:generate`
 - add your own google maps key to the .env file
