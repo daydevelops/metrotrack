@@ -14,4 +14,3 @@
 $router->get('/', function () use ($router) {
     return view('home',['gmap_key' => env('GMAP_KEY')]);
 });
-$router->get('/busses', ['uses' => 'BusController@index']);
